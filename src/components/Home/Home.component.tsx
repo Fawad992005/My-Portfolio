@@ -1,11 +1,14 @@
-import React from "react";
+import Navigation from "../Navigation/Navigation.component";
 
 const Home = () => {
   return (
-    <div>
-      Home
-      <p>Home Page</p>
-    </div>
+    <>
+      <Navigation />
+      <div className="h-[50vh]">
+        Home
+        <p>Home Page</p>
+      </div>
+    </>
   );
 };
 
