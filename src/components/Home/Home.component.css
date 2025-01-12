@@ -1,0 +1,16 @@
+.blinking-cursor {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 3px;
+    width: 2px;
+    height: 40px;
+    background-color: white;
+    animation: blink 1s steps(2, start) infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      background-color: transparent;
+    }
+  }
+  
