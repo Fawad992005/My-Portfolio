@@ -18,7 +18,7 @@ const Contact = () => {
       _replyto: email,
       message: message,
     };
-    fetch("https://formspree.io/f/mnnnwdeg", {
+    fetch(import.meta.env.VITE_FORM_SPREE_KEY, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
