@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import Navigation from "../Navigation/Navigation.component";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./Home.component.css";
 
 const Home = () => {
@@ -7,6 +9,10 @@ const Home = () => {
   const [displayedText, setDisplayedText] = useState("");
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
   // Typing animation logic
   useEffect(() => {
@@ -30,7 +36,10 @@ const Home = () => {
   return (
     <>
       <Navigation />
-      <div className="h-[100vh] flex items-center justify-center my-6">
+      <div
+        className="h-auto md:h-[70vh] flex items-center justify-center my-6"
+        data-aos="fade-down"
+      >
         <div className="flex flex-col md:flex-row items-center gap-8 justify-center">
           <div className="text-center md:text-left w-[76%] md:w-[50%] flex flex-col gap-4">
             <div className="text-4xl font-semibold text-green-600">
@@ -40,7 +49,7 @@ const Home = () => {
               {displayedText}
               <span className="blinking-cursor"></span>
             </div>
-            <div className="mt-4 text-gray-400">
+            <div className="mt-4 text-gray-300 text-xl">
               I am a Passionate Frontend Developer from Karachi, Pakistan,
               skilled in HTML, CSS, JavaScript, React, and TypeScript. Crafting
               responsive, user-friendly interfaces to deliver seamless web
@@ -50,7 +59,7 @@ const Home = () => {
               <a
                 href="/UpdatedResume.pdf"
                 download="UpdatedResume.pdf"
-                className="px-6 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition"
+                className="px-6 py-2 bg-green-600 text-black font-semibold rounded-lg shadow hover:bg-green-700 transition"
               >
                 Download Resume
               </a>
@@ -60,7 +69,7 @@ const Home = () => {
             <img
               src="/profileimage.jpg"
               alt="profile pic"
-              className="w-44 h-44 rounded-full border-4 border-green-500 shadow-lg shadow-green-500/50"
+              className="w-36 h-36 md:w-44 md:h-44 rounded-full border-4 border-green-500 shadow-lg shadow-green-500/50"
             />
           </div>
         </div>

@@ -56,6 +56,13 @@ const Navigation = () => {
               Home
             </Link>
             <Link
+              to="/about"
+              role="tab"
+              className="tab tab-bordered font-semibold text-lg border-green-500 hover:text-green-500 hover:border-green-500 tab-active:text-green-500 tab-active:border-green-500"
+            >
+              About Me
+            </Link>
+            <Link
               to="/skills"
               role="tab"
               className="tab tab-bordered font-semibold text-lg border-green-500 hover:text-green-500 hover:border-green-500 tab-active:text-green-500 tab-active:border-green-500"
@@ -101,6 +108,11 @@ const Navigation = () => {
             <li>
               <Link to="/" onClick={toggleMenu}>
                 Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" onClick={toggleMenu}>
+                About Me
               </Link>
             </li>
             <li>

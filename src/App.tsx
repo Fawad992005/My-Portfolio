@@ -4,12 +4,15 @@ import Home from "./components/Home/Home.component";
 import Project from "./components/Projects/Projects.component";
 import Contact from "./components/Contact/Contact.component";
 import Skills from "./components/Skills/Skills.component";
+import About from "./components/About/About.component";
+import Footer from "./components/Footer/Footer.component";
 
 function App() {
   const homeRef = useRef<HTMLDivElement | null>(null);
   const skillsRef = useRef<HTMLDivElement | null>(null);
   const projectsRef = useRef<HTMLDivElement | null>(null);
   const contactRef = useRef<HTMLDivElement | null>(null);
+  const aboutRef = useRef<HTMLDivElement | null>(null);
 
   const location = useLocation();
   const [showFab, setShowFab] = useState(false);
@@ -20,6 +23,7 @@ function App() {
       "/skills": skillsRef,
       "/projects": projectsRef,
       "/contact": contactRef,
+      "/about": aboutRef,
     };
 
     const ref = sectionRefs[location.pathname];
@@ -28,7 +32,6 @@ function App() {
     }
   }, [location]);
 
-  // Show FAB when scrolling down
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 300) {
@@ -42,7 +45,6 @@ function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Scroll to top handler
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
@@ -53,6 +55,9 @@ function App() {
       <div ref={homeRef}>
         <Home />
       </div>
+      <div ref={aboutRef}>
+        <About />
+      </div>
       <div ref={skillsRef}>
         <Skills />
       </div>
@@ -62,8 +67,11 @@ function App() {
       <div ref={contactRef}>
         <Contact />
       </div>
+      <Footer />
 
       {/* Floating Action Button */}
+
+      {/* Routes */}
       {showFab && (
         <button
           onClick={scrollToTop}
