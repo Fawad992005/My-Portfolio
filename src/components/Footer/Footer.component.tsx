@@ -1,4 +1,4 @@
-import { FaWhatsapp, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaWhatsapp, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -21,12 +21,12 @@ const Footer = () => {
           <FaGithub size={30} color="white" />
         </a>
         <a
-          href="https://www.instagram.com/fawadahmed2005"
+          href="https://www.linkedin.com/in/fawad-ahmed-207b3b343/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-pink-500 hover:text-pink-600 transition duration-300"
+          className="text-blue-500 hover:text-blue-600 transition duration-300"
         >
-          <FaInstagram size={30} />
+          <FaLinkedin size={30} />
         </a>
       </div>
       <p className="text-base text-gray-400">
