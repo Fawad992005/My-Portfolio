@@ -35,6 +35,14 @@ const projects: ProjectType[] = [
     image: "/passop.jpg", // Replace with your image URL
     link: "https://passopbeta.netlify.app",
   },
+  {
+    id: 4,
+    name: "NASA Project",
+    description:
+      "Nasa Project is a MERN stack project where users can launch and abort space missions. Built with React, Node.js, Express.js, and MongoDB, it features a dynamic interface for managing missions. Users can schedule new launches and cancel existing ones, with real-time updates reflecting mission status. The backend ensures efficient data handling, while the frontend provides a seamless and interactive experience.",
+    image: "/portfolio.PNG", // Replace with your image URL
+    link: "https://fawadahmedportfolio.netlify.app",
+  },
   // Add more projects as needed
 ];
 
