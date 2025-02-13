@@ -26,6 +26,20 @@ const About = () => {
           problems, learning new technologies, and delivering well-crafted,
           functional solutions that bring ideas to life on the web.
         </div>
+
+        <div className="text-lg text-gray-400 mb-6">
+          <span className="font-semibold text-green-500">University: </span>
+          <span className="font-semibold text-green-500">
+            University Of Karachi (UBIT) (2024 - Present)
+          </span>
+        </div>
+        <div className="text-lg text-gray-400 mb-6">
+          <span className="font-semibold text-green-500">Intermediate: </span>
+          <span className="font-semibold text-green-500">
+            Govt College For Men Nazimabad (2021-2023)
+          </span>
+        </div>
+
         <button
           onClick={() => navigate("/contact")}
           className="px-6 py-3 bg-green-600 text-gray-900 font-semibold rounded-lg hover:bg-green-700 transition-colors"

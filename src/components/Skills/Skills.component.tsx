@@ -24,7 +24,8 @@ const Skills = () => {
           <div className="space-y-6  mt-5">
             <Skill name="React" level="81" />
             <Skill name="Tailwind CSS" level="80" />
-            <Skill name="NextJS" level="30" />
+            <Skill name="NodeJS" level="60" />
+            <Skill name="ExpressJS" level="60" />
           </div>
         </div>
       </div>

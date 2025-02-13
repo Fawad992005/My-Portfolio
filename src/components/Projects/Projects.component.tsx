@@ -37,11 +37,19 @@ const projects: ProjectType[] = [
   },
   {
     id: 4,
-    name: "NASA Project",
+    name: "NASA MERN stack Project",
     description:
       "Nasa Project is a MERN stack project where users can launch and abort space missions. Built with React, Node.js, Express.js, and MongoDB, it features a dynamic interface for managing missions. Users can schedule new launches and cancel existing ones, with real-time updates reflecting mission status. The backend ensures efficient data handling, while the frontend provides a seamless and interactive experience.",
-    image: "/portfolio.PNG", // Replace with your image URL
-    link: "https://fawadahmedportfolio.netlify.app",
+    image: "/NASA.PNG", // Replace with your image URL
+    link: "https://nasa-project-frontend-gray.vercel.app/",
+  },
+  {
+    id: 5,
+    name: "MERN Chat Web App",
+    description:
+      "Nasa Project is a MERN stack project where users can launch and abort space missions. Built with React, Node.js, Express.js, and MongoDB, it features a dynamic interface for managing missions. Users can schedule new launches and cancel existing ones, with real-time updates reflecting mission status. The backend ensures efficient data handling, while the frontend provides a seamless and interactive experience.",
+    image: "/ChatApp.PNG", // Replace with your image URL
+    link: "https://mern-chat-web-app-olive.vercel.app/",
   },
   // Add more projects as needed
 ];
