@@ -47,7 +47,7 @@ const projects: ProjectType[] = [
     id: 5,
     name: "MERN Chat Web App",
     description:
-      "Nasa Project is a MERN stack project where users can launch and abort space missions. Built with React, Node.js, Express.js, and MongoDB, it features a dynamic interface for managing missions. Users can schedule new launches and cancel existing ones, with real-time updates reflecting mission status. The backend ensures efficient data handling, while the frontend provides a seamless and interactive experience.",
+      "MERN Chat App is a real-time messaging application built with React, Node.js, Express.js, and MongoDB. It features one-to-one and group chats, user authentication, and real-time updates using Socket.io. The backend ensures secure and efficient message handling, while the frontend provides a seamless and interactive chat experience.",
     image: "/ChatApp.PNG", // Replace with your image URL
     link: "https://mern-chat-web-app-olive.vercel.app/",
   },
