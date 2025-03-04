@@ -50,10 +50,11 @@ const Home = () => {
               <span className="blinking-cursor"></span>
             </div>
             <div className="mt-4 text-gray-300 text-xl">
-              I am a Passionate Frontend Developer from Karachi, Pakistan,
-              skilled in HTML, CSS, JavaScript, React, and TypeScript. Crafting
-              responsive, user-friendly interfaces to deliver seamless web
-              experiences and enhance user engagement.
+              I am a passionate Frontend Developer and an undergraduate student
+              from Karachi, Pakistan, skilled in HTML, CSS, JavaScript, React,
+              and TypeScript. I specialize in crafting responsive, user-friendly
+              interfaces to deliver seamless web experiences and enhance user
+              engagement.
             </div>
             <div className="mt-6">
               <a
