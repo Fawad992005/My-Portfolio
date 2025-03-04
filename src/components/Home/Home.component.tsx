@@ -57,8 +57,8 @@ const Home = () => {
             </div>
             <div className="mt-6">
               <a
-                href="/UpdatedResume.pdf"
-                download="UpdatedResume.pdf"
+                href="/FrontEndResume.pdf"
+                download="FrontEndResume.pdf"
                 className="px-6 py-2 bg-green-600 text-black font-semibold rounded-lg shadow hover:bg-green-700 transition"
               >
                 Download Resume
