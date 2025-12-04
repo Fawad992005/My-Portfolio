@@ -70,6 +70,13 @@ const Navigation = () => {
               Skills
             </Link>
             <Link
+              to="/experience"
+              role="tab"
+              className="tab tab-bordered font-semibold text-lg border-green-500 hover:text-green-500 hover:border-green-500 tab-active:text-green-500 tab-active:border-green-500"
+            >
+              Experience
+            </Link>
+            <Link
               to="/projects"
               role="tab"
               className="tab tab-bordered font-semibold text-lg border-green-500 hover:text-green-500 hover:border-green-500 tab-active:text-green-500 tab-active:border-green-500"
@@ -118,6 +125,11 @@ const Navigation = () => {
             <li>
               <Link to="/skills" onClick={toggleMenu}>
                 Skills
+              </Link>
+            </li>
+            <li>
+              <Link to="/experience" onClick={toggleMenu}>
+                Experience
               </Link>
             </li>
             <li>

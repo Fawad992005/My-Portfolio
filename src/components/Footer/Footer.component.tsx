@@ -21,7 +21,7 @@ const Footer = () => {
           <FaGithub size={30} color="white" />
         </a>
         <a
-          href="https://www.linkedin.com/in/fawad-ahmed-207b3b343/"
+          href="https://www.linkedin.com/in/fawad-ahmed-207b3b343?utm_source=share_via&utm_content=profile&utm_medium=member_android"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-500 hover:text-blue-600 transition duration-300"

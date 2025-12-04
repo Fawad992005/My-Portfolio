@@ -6,6 +6,7 @@ import Contact from "./components/Contact/Contact.component";
 import Skills from "./components/Skills/Skills.component";
 import About from "./components/About/About.component";
 import Footer from "./components/Footer/Footer.component";
+import ExperienceComponent from "./components/Experience/Experience.component";
 
 function App() {
   const homeRef = useRef<HTMLDivElement | null>(null);
@@ -13,6 +14,7 @@ function App() {
   const projectsRef = useRef<HTMLDivElement | null>(null);
   const contactRef = useRef<HTMLDivElement | null>(null);
   const aboutRef = useRef<HTMLDivElement | null>(null);
+  const experienceRef = useRef<HTMLDivElement | null>(null);
 
   const location = useLocation();
   const [showFab, setShowFab] = useState(false);
@@ -22,6 +24,7 @@ function App() {
       "/": homeRef,
       "/skills": skillsRef,
       "/projects": projectsRef,
+      "/experience": experienceRef,
       "/contact": contactRef,
       "/about": aboutRef,
     };
@@ -60,6 +63,9 @@ function App() {
       </div>
       <div ref={skillsRef}>
         <Skills />
+      </div>
+      <div ref={experienceRef}>
+        <ExperienceComponent />
       </div>
       <div ref={projectsRef}>
         <Project />

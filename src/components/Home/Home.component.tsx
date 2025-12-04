@@ -5,7 +5,11 @@ import "aos/dist/aos.css";
 import "./Home.component.css";
 
 const Home = () => {
-  const roles = ["Frontend Developer", "React Developer"];
+  const roles = [
+    "Frontend Developer",
+    "React Developer",
+    "React Native Developer",
+  ];
   const [displayedText, setDisplayedText] = useState("");
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
@@ -51,15 +55,15 @@ const Home = () => {
             </div>
             <div className="mt-4 text-gray-300 text-xl">
               I am a passionate Frontend Developer and an undergraduate student
-              from Karachi, Pakistan, skilled in HTML, CSS, JavaScript, React,
-              and TypeScript. I specialize in crafting responsive, user-friendly
-              interfaces to deliver seamless web experiences and enhance user
-              engagement.
+              from Karachi, Pakistan, skilled in HTML, CSS, JavaScript, React ,
+              React Native and TypeScript. I specialize in crafting responsive,
+              user-friendly interfaces to deliver seamless web experiences and
+              enhance user engagement.
             </div>
             <div className="mt-6">
               <a
-                href="/FrontEndResume.pdf"
-                download="FrontEndResume.pdf"
+                href="/Resume.pdf"
+                download="Resume.pdf"
                 className="px-6 py-2 bg-green-600 text-black font-semibold rounded-lg shadow hover:bg-green-700 transition"
               >
                 Download Resume
